@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+<style type="text/css">
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style-type: none;
+}
+.clear{
+	clear: both;
+}
+#page{
+	width: 1300px;
+	margin: auto;
+	border: 0px solid #bbbbbb;
+
+}
+header{
+	width: 1920px;
+	height: 110px;
+	margin-left: -300px;
+	border: 0px solid #bbbbbb;
+	position: fixed;
+	background-color: white;
+	z-index: 1;
+}
+nav{
+	width: 1920px;
+	height: 60px;
+	margin-top: 100px;
+	margin-left: -300px;
+	padding-left: 350px;
+	border-top: 1px solid #e6e6e6;
+	border-bottom: 1px solid #bbbbbb;
+	position: fixed;
+	background-color: white;
+	z-index: 1;
+}
+nav li{
+	display: inline-block;
+	margin: 20px 30px 30px 20px;
+	font-size: 18px;
+}
+section{
+	float: left;
+	margin-top: 10px;
+	border: 0px solid #bbbbbb;
+	padding-bottom: 20px;
+	padding-left: 70px;
+}
+#aside1{
+	float: right;
+	margin-top: 150px;
+	margin-left: 1490px;
+	position: fixed;
+}
+#aside1 li{
+	text-align: center;
+	margin-bottom: 5px;
+
+}
+footer{
+	width: 1920px;
+	height: 140px;
+	padding: 20px 0 10px 0;
+	background-color: #f5f6fa;
+	margin-left: -320px;
+}
+a{
+	text-decoration:none;
+}
+table{
+	margin: -20px 0 50px 10px;
+}
+
+td{
+	padding: 8px 26px 8px 10px;
+}
+
+#b{
+	padding-top: 150px;
+}
+#address{
+float: left;
+margin: 10px 0 0 370px;
+}
+#customer{
+float: right;
+margin: 8px 350px 0 50px;
+}
+#bottom {
+	margin: auto;
+	padding-left: 15px;
+	text-align: center;
+}
+#logo{
+	float: left;
+	margin-top: 20px;
+	margin-left: 360px;
+}
+#top{
+	float: right;
+	margin: 30px 360px 0 0;
+}
+#ex1{
+	border-bottom: 2px solid #21a089 ;
+}
+#ex2{
+	border-bottom: 2px solid #4a75b9;
+}
+#ex3{
+	border-bottom: 2px solid #c24ea8;
+}
+#ex4{
+	border-bottom: 2px solid #21a089;
+}
+#sub1_t{
+margin-top: -5px;
+}
+#sub1_t li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	width: 280px;
+	height: 40px;
+	padding-top: 20px;
+	font-weight: 700;
+	background-color: white;
+	font-size: 15px;
+}
+#sub3_t{
+margin-top: -5px;
+}
+#sub3_t li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	width: 280px;
+	height: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: 700;
+	background-color: white;
+	font-size: 15px;
+	border-bottom: 2px solid #bbbbbb;
+}
+#sub3_t li:hover{
+	border-bottom: 2px solid #21a089;
+}
+#sub1{
+
+}
+#sub1 li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 280px;
+	height: 150px;
+}
+#sub1 img{
+	width: 280px;
+	height: 150px;
+	display: block;
+	margin-bottom: -21px;
+}
+
+#sub1 img:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+
+#sub2 {
+background-color: white;
+margin-right: 5px;
+font-size: 14px;
+}
+#sub2 li{
+	display: inline-block;
+	padding: 15px 32px 50px 32px;
+	text-align: center;
+}
+#sub3{
+
+}
+#sub3 li{
+	display: inline-block;
+	text-align: center;
+	margin-right: 20px;
+	overflow: hidden;
+}
+#sub3 img{
+	width: 280px;
+	height: 180px;
+	display: block;
+}
+#sub3 img:hover{
+	transform: scale(1.1);
+	transition: transform 0.5s;
+}
+#sub4 {
+	margin: 80px 0 20px 50px;
+	border-top: 1px solid #bbbbbb;
+	border-bottom: 1px solid #f2f2f2;
+}
+#sub4 img{
+	padding: -10px 40px 0 55px;
+	margin-bottom: -20px;
+}
+#sub5{
+
+}
+#sub5 li{
+	display: inline-block;
+	margin-right: 15px;
+}
+.s2 {
+	position:relative;
+	right: 15px;
+}
+.s2 img { 
+	display:block; 
+	position:absolute; 
+	transition: opacity 0.5s; 
+}
+.s2:hover img:last-child {
+	opacity:0
+}
+.s3 {
+	position:relative;
+	top: 98px;
+	right: 9px;
+}
+.s3 img { 
+	display:block; 
+	position:absolute; 
+	transition: opacity 0.5s; 
+}
+.s3:hover img:last-child {
+	opacity:0
+}
+.s4 {
+	position:relative;
+	top: 200px;
+	right: 12px;
+}
+.s4 img { 
+	display:block; 
+	position:absolute; 
+	transition: opacity 0.5s; 
+}
+.s4:hover img:last-child {
+	opacity:0
+}
+.con{
+}
+.con:hover{
+	color: #21a089;
+	border-bottom: 3px solid #21a089;
+	padding-bottom: 14px;
+}
+#border{
+	border: 1px solid #bbbbbb;
+	background-color: white;
+	padding: 20px;
+	margin: 5px 10px 0 75px;
+	width: 750px;
+}
+#line{
+	border-top: 1px solid #bbbbbb;
+}
+#head{
+	padding: 0 10px 10px 10px;
+	font-weight: bold;
+}
+#side{
+	float: right;
+	padding: 10px;
+	width: 350px;
+	font-size:14px;
+	border: 1px solid #bbbbbb;
+	position: static;
+}
+#side li{
+	padding-bottom: 10px;
+}
+#news{
+	width: 350px;
+	padding: 30px -5px -50px 0;
+	position: static;
+	border: 1px solid #bbbbbb;
+	}
+
+</style>
+
+</head>
+<body id="page">
+	<header>
+		<div id="logo">
+		<img src="./img/logo.PNG">
+	</div>
+	<div id="top">
+		로그인 ｜ 회원가입 ｜ <a href="./intro.html">마이페이지</a> ｜ 고객센터
+	</div>
+	</header>
+	<div class="clear"></div>
+	<nav>
+		<ul>
+			<li> <div class="con"><a href="./contents.html">감염병</a></div> </li>
+			<li> 건강정보 </li>
+			<li> 정책정보 </li>
+			<li> 연구개발 </li>
+			<li> 알림·자료</li>
+			<li> 간행물·통계</li>
+			<li> 민원·정보공개 </li>
+			<li> 기관소개 </li>
+			<li> 사업별홈페이지 </li>
+		</ul>
+	</nav>
+
+	<div class="clear"></div>
+
+	<div id="b">
+	<section>
+		<img src="./img/main_01.jpg" width="101.5%">
+	</section>
+	</div>
+	<aside id="aside1">
+		<ul>
+			<li> <img src="./img/s1.PNG"> </li>
+			<li class="s2"> <img src="./img/s2_2.png"><img src="./img/s2.PNG"> </li>
+			<li class="s3"> <img src="./img/s3_2.png"><img src="./img/s3.PNG"> </li>
+			<li class="s4"> <img src="./img/s4_2.png"><img src="./img/s4.PNG"> </li>
+		</ul>
+	</aside>
+
+	<section>
+		<ul id="sub1">
+			<li> <img src="./img/banner.PNG" width="250" height="150"> </li>
+			<li> <img src="./img/banner02.PNG" width="250" height="150"> </li>
+			<li> <img src="./img/banner03.jpg" width="250" height="150"> </li>
+			<li> <img src="./img/banner04.jpg" width="250" height="150"> </li>
+		</ul>
+		<ul id="sub1_t">
+			<li id="ex1"> 온열질환 건강수칙 </li>
+			<li id="ex2"> 비브리오패혈증 예방수칙 </li>
+			<li id="ex3"> 진드기 매개 감염병 </li>
+			<li id="ex4"> 코로나19 영상자료 </li>
+		</ul>
+	</section>
+
+	<section>
+		<ul id="sub2">
+			<li> &emsp;<img src="./img/service.PNG"> </li>
+			<li> <img src="./img/button_01.PNG" onmouseover="this.src='./img/button_01_2.PNG'" onmouseout="this.src='./img/button_01.PNG'"> <br> 국가별 질병정보</li>
+			<li> <img src="./img/button_02.PNG" onmouseover="this.src='./img/button_02_2.PNG'" onmouseout="this.src='./img/button_02.png'"> <br> 홍보자료</li>
+			<li> <img src="./img/button_03.PNG" onmouseover="this.src='./img/button_03_2.PNG'" onmouseout="this.src='./img/button_03.PNG'"> <br> 간행물·통계</li>
+			<li> <img src="./img/button_04.PNG" onmouseover="this.src='./img/button_04_2.PNG'" onmouseout="this.src='./img/button_04.PNG'"> <br> 조직도·직원찾기</li>
+			<li> <img src="./img/button_05.PNG" onmouseover="this.src='./img/button_05_2.PNG'" onmouseout="this.src='./img/button_05.PNG'"> <br> 법령·지침·서식</li>
+			<li> <img src="./img/button_06.PNG" onmouseover="this.src='./img/button_06_2.PNG'" onmouseout="this.src='./img/button_06.PNG'"> <br> 공고/공시</li>
+		</ul>
+	</section>
+
+	<div class="clear"></div>
+
+	<section id="border">
+		<div id="head"> <span style="border-bottom:2px solid #21a089; padding-bottom: 10px; color:#21a089;">보도자료</span> &emsp;&emsp; 공지사항 &emsp;&emsp; 채용공고 &emsp;&emsp; 주간건강과질병 </div>
+
+		<div id="line"></div>
+		<div id="news">
+		<h3> <span style="color: #4d4d4d"> 코로나바이러스감염증-19 국내 발생<img src="./img/s.png">&emsp; <img src="./img/n.PNG"></span></h3>
+		<ul>
+			<li>
+				<span style="font-size: 14px; font-weight:700; color: #808080"> 코로나바이러스감염증-19 국내 발생 현황(7월 7일,정례브리핑)□질병관리본부 중앙방역대책본부(본부장 정은경)는 7월 7일 0시 현재,국내발생은 20명,  해외유입으로 2....</span>
+			</li>
+			<li>
+				<span style="font-size: 13px; font-weight:700; color: #bbbbbb"> 2020-07-07</span>
+			</li>
+
+		</ul>
+	</div>
+		<ul id="side">
+			<li>
+			· 코로나바이러스감염증-19 국내 발생 현황(7월<img src="./img/s.png" width="15px"> <img src="./img/n.PNG">
+		</li>
+		<li>
+			· 코로나바이러스감염증-19 국내 발생 현황(7월<img src="./img/s.png" width="15px"> <img src="./img/n.PNG">
+		</li>
+		<li>
+			· 코로나바이러스감염증-19 국내 발생 현황(7월<img src="./img/s.png" width="15px"> <img src="./img/n.PNG">
+		</li>
+		<li>
+			· 코로나바이러스감염증-19 국내 발생 현황(7월<img src="./img/s.png" width="15px"> <img src="./img/n.PNG">
+		</li>
+		</ul>
+	</section>
+
+	<aside>
+		<img src="./img/bs.PNG">
+	</aside>
+
+	<div id="clear"></div>
+
+
+	<section>
+		<ul id="sub5">
+			<li> <img src="./img/banner09.PNG"> </li>
+			<li> <img src="./img/banner10.PNG"> </li>
+			<li> <img src="./img/banner11.PNG"> </li>
+		</ul>
+	</section>
+
+	<div class="clear"></div>
+
+	<section>
+		<table>
+			<tr>
+				<td> <img src="./img/h2_news.png"> </td>
+				<td rowspan="3"> <br><img src="./img/face.PNG" onmouseover="this.src='./img/face2.PNG'" onmouseout="this.src='./img/face.PNG'"> </td>
+				<td rowspan="3"> <br><img src="./img/twit.PNG" onmouseover="this.src='./img/twit2.PNG'" onmouseout="this.src='./img/twit.PNG'"> </td>
+				<td rowspan="3"> <br><img src="./img/naver.PNG" onmouseover="this.src='./img/naver2.PNG'" onmouseout="this.src='./img/naver.PNG'"> </td>
+				<td rowspan="3"> <br><img src="./img/you.PNG" onmouseover="this.src='./img/you2.PNG'" onmouseout="this.src='./img/you.PNG'"> </td>
+			</tr>
+			<tr>
+				<td> <img src="./img/h2_2.png"></td>
+			</tr>
+			<tr>
+				<td> <span style="font-weight:1000; font-size:15px; color:#999999;" >국가공중보건관리 중추기관으로서 국민 건강을 증진하고, 전문성·혁신·소통·신뢰를<p> 기반으로 24시간 365일 최선을 다하겠습니다.</span> </td>
+			</tr>
+		</table>
+	</section>
+
+	<div class="clear"></div>
+	<section>
+		<ul id="sub3">
+			<li> <img src="./img/banner05.PNG" width="250" height="150"> </li>
+			<li> <img src="./img/banner06.PNG" width="250" height="150"> </li>
+			<li> <img src="./img/banner07.PNG" width="250" height="150"> </li>
+			<li> <img src="./img/banner08.PNG" width="250" height="150"> </li>
+		</ul>
+
+		<ul id="sub3_t">
+			<li> 진짜 힘은 손 씻을 때 생긴다! <br> <span style="font-size:13px; font-weight:700; color: #808080"> 마블 콜라보 질병예방 캠페인 </span> </li>
+			<li> 중동지역을 방문하셨나요? <br> <span style="font-size:13px; font-weight:700; color: #808080"> 메르스 의심증상 발생 시 1339 </span> </li>
+			<li> 기침예절 지켜요! <br> <span style="font-size:13px; font-weight:700; color: #808080"> 기침예절은 감염병 예방의 기본수칙 </span> </li>
+			<li> 1339 질병관리본부 콜센터 <br> <span style="font-size:13px; font-weight:700; color: #808080"> 질병정보 궁금할 때 감염병이 의심될 때 </span> </li>
+		</ul>
+	</section>
+
+
+	<div class="clear"></div>
+	<div id="sub4">
+		<img src="./img/bottom.PNG">
+	</div>
+	<div class="clear"></div>
+	<footer>
+		<div id="bottom">
+			<img src="./img/bottom2.PNG">
+		</div>
+		<div id="address">
+			<img src="./img/address.PNG">
+		</div>
+		<div id="customer">
+			<img src="./img/customer.PNG">
+		</div>
+	</footer>
+</body>
+</html>
